@@ -2,7 +2,9 @@
 
 namespace Kirby\Panel;
 
+use Kirby\Cms\App;
 use Kirby\Exception\Exception;
+use Kirby\Filesystem\Asset;
 use Kirby\Filesystem\Dir;
 use Kirby\Filesystem\F;
 use Kirby\Http\Response;
@@ -147,7 +149,7 @@ class Document
     public static function customCss(): ?string
     {
         if ($css = kirby()->option('panel.css')) {
-            $asset = asset($css);
+            $asset = new Asset($css);
 
             if ($asset->exists() === true) {
                 return $asset->url() . '?' . $asset->modified();
@@ -166,7 +168,7 @@ class Document
     public static function customJs(): ?string
     {
         if ($js = kirby()->option('panel.js')) {
-            $asset = asset($js);
+            $asset = new Asset($js);
 
             if ($asset->exists() === true) {
                 return $asset->url() . '?' . $asset->modified();
@@ -237,7 +239,7 @@ class Document
         try {
             if (static::link() === true) {
                 usleep(1);
-                go($kirby->url('index') . '/' . $kirby->path());
+                App::go($kirby->url('index') . '/' . $kirby->path());
             }
         } catch (Throwable $e) {
             die('The Panel assets cannot be installed properly. ' . $e->getMessage());
