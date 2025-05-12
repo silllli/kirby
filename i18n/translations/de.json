@@ -187,7 +187,7 @@
 	"error.page.move.ancestor": "Die Seite kann nicht in sich selbst verschoben werden",
 	"error.page.move.directory": "Der Ordner der Seite kann nicht verschoben werden",
 	"error.page.move.duplicate": "Eine Seite mit dem URL-Kürzel \"{slug}\" besteht bereits",
-	"error.page.move.noSections": "Die Seite \"{parent}\" kann nicht ausgewählt werden, weil sie keine Unterseiten haben kann. ",
+	"error.page.move.noSections": "Die Seite \"{parent}\" kann nicht ausgewählt werden, weil sie keine Unterseiten haben kann",
 	"error.page.move.notFound": "Die verschobene Seite kann nicht gefunden werden",
 	"error.page.move.permission": "Du kannst die Seite \"{slug}\" nicht verschieben",
 	"error.page.move.template": "Die Vorlage \"{template}\" wird nicht als Unterseite von \"{parent}\" akzeptiert",
@@ -357,7 +357,7 @@
 	"field.blocks.video.url.placeholder": "https://youtube.com/?v=",
 
 	"field.entries.delete.confirm.all": "Möchtest du wirklich alle Einträge löschen?",
-	"field.entries.empty": "Es bestehen keine Einträge.",
+	"field.entries.empty": "Es bestehen keine Einträge",
 
 	"field.files.empty": "Keine Dateien ausgewählt",
 	"field.files.empty.single": "Keine Dateien ausgewählt",
@@ -376,7 +376,7 @@
 
 	"field.structure.delete.confirm": "Willst du diesen Eintrag wirklich l\u00f6schen?",
 	"field.structure.delete.confirm.all": "Möchtest du wirklich alle Einträge löschen?",
-	"field.structure.empty": "Es bestehen keine Eintr\u00e4ge.",
+	"field.structure.empty": "Es bestehen keine Eintr\u00e4ge",
 
 	"field.users.empty": "Keine Accounts ausgewählt",
 	"field.users.empty.single": "Keine Accounts ausgewählt",
